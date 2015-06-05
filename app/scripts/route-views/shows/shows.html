@@ -1,0 +1,8 @@
+<div>Shows page</div>
+<ul>
+    <li ui-sref-active="selected" ng-repeat="show in vm.shows">
+        <a ui-sref="routeviews.shows.detail({id: show.id})">{{show.name}}</a>
+    </li>
+</ul>
+ 
+<div class="detail" ui-view></div>

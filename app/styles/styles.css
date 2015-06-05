@@ -1,0 +1,12 @@
+/* my styles */
+
+.selected {
+	background-color: #efefef;
+	width:120px;
+}
+
+.detail {
+	width: 300px;
+	margin: 30px;
+	border-top: 1px solid #efefef;
+}
