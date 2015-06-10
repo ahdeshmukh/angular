@@ -6,7 +6,7 @@
 		.factory('showsFactory', showsFactory);
 	
 	
-	showsFactory.$inject = ['lodash']
+	showsFactory.$inject = ['lodash'];
 	
 	function showsFactory(_) {
 		
@@ -34,7 +34,7 @@
 	        find: function(id){
 	            return _.find(shows, function(show){return show.id == id});
 	        }
-	    }
+	    };
 		
 	}
 	
