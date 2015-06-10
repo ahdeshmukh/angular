@@ -8,11 +8,8 @@
 	showsCtrl.$inject = ['showsFactory'];
 	
 	function showsCtrl(showsFactory) {
-		
 		var vm = this;
-		
 		vm.shows = showsFactory.list();
-		
 	}
 	
 })();
