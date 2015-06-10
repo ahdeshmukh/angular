@@ -8,7 +8,7 @@
 	
 	showsFactory.$inject = ['lodash']
 	
-	function showsFactory(lodash) {
+	function showsFactory(_) {
 		
 		var shows = [{
 	        	id: 1,
@@ -32,7 +32,7 @@
 	            return shows;
 	        },
 	        find: function(id){
-	            return lodash.find(shows, function(show){return show.id == id});
+	            return _.find(shows, function(show){return show.id == id});
 	        }
 	    }
 		
