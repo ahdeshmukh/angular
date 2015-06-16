@@ -18,6 +18,12 @@
 		.state('directives', {
 			url: '/directives',
 			templateUrl: modulePath + 'directives.html'
+		})
+		
+		$stateProvider
+		.state('directives.transclude', {
+			url: '/directives/transculde',
+			templateUrl: modulePath + 'directives.transclude.html'
 		});
 	}
 	
