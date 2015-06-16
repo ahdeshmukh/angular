@@ -5,11 +5,11 @@
 		.module('angularApp.core', [
 			'ngAnimate',
 			'ngCookies',
-		    'ngResource',
-		    'ngSanitize',
-		    'ngTouch',
-		    'ui.router',
-		    'ngLodash'
+		   'ngResource',
+		   'ngSanitize',
+		   'ngTouch',
+		   'ui.router',
+		   'ngLodash'
 		]);
 	
 	angular
