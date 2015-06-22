@@ -19,11 +19,13 @@
 			url: '/directives',
 			templateUrl: modulePath + 'directives.html'
 		})
-		
-		$stateProvider
 		.state('directives.transclude', {
 			url: '/directives/transculde',
 			templateUrl: modulePath + 'directives.transclude.html'
+		})
+		.state('directives.dom', {
+			url: '/directives/dom',
+			template: '<div dom-directive>Click Me!</div>'
 		});
 	}
 	
