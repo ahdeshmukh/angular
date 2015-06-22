@@ -20,7 +20,7 @@
 			templateUrl: modulePath + 'directives.html'
 		})
 		.state('directives.transclude', {
-			url: '/directives/transculde',
+			url: '/directives/transclude',
 			templateUrl: modulePath + 'directives.transclude.html'
 		})
 		.state('directives.dom', {
