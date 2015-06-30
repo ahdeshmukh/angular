@@ -17,6 +17,7 @@
 			'angularApp.core',
 			'angularApp.home',
 			'angularApp.directives',
-			'angularApp.routeviews'
+			'angularApp.routeviews',
+			'angularApp.about'
 		]);
 })();
