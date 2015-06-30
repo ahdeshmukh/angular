@@ -1,8 +1,10 @@
 (function() {
 	'use strict';
 	
+	angular.module('angularApp.about', []);
+	
 	angular
-		.module('angularApp')
+		.module('angularApp.about')
 		.config(routeConfig);
 	
 	routeConfig.$inject = ['$stateProvider', '$urlRouterProvider', 'APP_GLOBALS'];
