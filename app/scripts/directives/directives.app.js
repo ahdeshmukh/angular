@@ -26,6 +26,11 @@
 		.state('directives.dom', {
 			url: '/directives/dom',
 			template: '<div dom-directive>Click Me!</div>'
+		})
+		.state('directives.hyperlinks', {
+			url: '/directives/hyperlinks',
+			templateUrl: modulePath + 'hyperlinks/hyperlinks.view.html',
+			controller: 'HyperlinksCtrl as vm'
 		});
 	}
 	
