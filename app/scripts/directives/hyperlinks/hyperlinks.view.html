@@ -1,0 +1,39 @@
+<div>
+  <div>
+    This directive is used to ensure that the hyperlinks always open in a new tab. 
+    This is especially important for hyperlinks that are contained in the data returned from a server.
+    (Eg: Body or long description of any entity stored in a DB column may contain external hyperlinks).
+    This is extremely essential, especially for hybrid mobile app developed in ionic, as we do not want the 
+    external links to open in inappbrowser and push the app into the background. we need to open such link in
+    the system browser.
+  </div>
+  <div style="border-style: solid;  border-width: 1px;" >
+	  <div style="margin: 10px;">
+	    <b>With data-ng-bind</b>
+	    <span>(Notice how the html tags are printed as strings)</span>
+	    <div data-ng-bind="vm.data"></div>
+	  </div>
+	  <div style="margin: 10px;">
+	    <b>With data-ng-bind-html</b>
+	    <span>(HTML gets printed correctly but ng-bind-html strips attributes like target=_blank for href, 
+	    or styles attribute from a div)</span>
+	    <div data-ng-bind-html="vm.data"></div>
+	  </div>
+	  <div style="margin: 10px;">
+      <b>With compile</b>
+      <span>(as you notice, style attribute is preserved, hence we see Hello Dummy data as red. 
+      also the 'a' directive defined in hyperlinks.directive.js takes over and makes sure the link opens in a new tab)</span>
+      <div compile="vm.data"></div>
+    </div>
+  </div>
+  <div>
+    <div>Files Involved</div>
+    <ul>
+      <li>hyperlinks/hyperlinks.directive.js</li>
+      <li>hyperlinks/hyperlinks.controller.js</li>
+      <li>hyperlinks/hyperlinks.view.html</li>
+      <li>directives.app.js</li>
+      <li>directives.html</li>
+    </ul>
+  </div>
+</div>
