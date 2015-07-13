@@ -1,1 +1,25 @@
-<div>Isolate scope attr</div>
+<div>Isolate scope attr (@)</div>
+<div isolate-scope-attr fruit-name="{{vm.fruitName}}"></div>
+
+
+<div style="border:1px solid;">
+  <div>Here the fruit-name is considered as an attribute of the div, which is passed into the 'xyz' property of the isolate scope.</div>
+  <div>This 'xyz' property is then printed in the template which prints the string value of the 'xyz' property.</div>
+  <div>In the code we have var directive = {scope: {xyz: "@fruitName"}}</div>
+  <div>We get the value of fruit-name attribute from the div, assign it to the 'xyz' property in the isolate scope and then print it.</div>
+  <div>
+    We can also do var directive = {scope: {fruitName: "@"}}, where instead of 'xyz' property name, we are using 'fruitName' which 
+    matches the attribute fruit-name of the div.
+  </div>
+  <div>
+    Core files
+    <ul>
+      <li>isolate-scope/attr/isolate-scope-attr.directive.js</li>
+      <li>isolate-scope/attr/isolate-scope-attr.view.html</li>
+      <li>isolate-scope/attr/isolate-scope-attr.controller.js</li>
+      <li>directives/directives.app.js</li>
+      <li>isolate-scope/isolate-scope.view.html</li>
+    </ul>
+  </div>
+  
+</div>

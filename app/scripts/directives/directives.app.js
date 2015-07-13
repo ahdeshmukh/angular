@@ -38,8 +38,8 @@
 		})
 		.state('directives.isolate-scope.attr', {
 			url: 'directives/isolate-scope/attr',
-			templateUrl: modulePath + 'isolate-scope/attr/isolate-scope-attr.view.html'
-			//template: '<div>Attr</div>'
+			templateUrl: modulePath + 'isolate-scope/attr/isolate-scope-attr.view.html',
+			controller: 'IsolateScopeAttrCtrl as vm'
 		})
 		.state('directives.isolate-scope.equal', {
 			url: 'directives/isolate-scope/equal',
