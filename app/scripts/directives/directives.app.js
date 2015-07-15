@@ -37,17 +37,17 @@
 			templateUrl: modulePath + 'isolate-scope/isolate-scope.view.html'
 		})
 		.state('directives.isolate-scope.attr', {
-			url: 'directives/isolate-scope/attr',
+			url: '/attr',
 			templateUrl: modulePath + 'isolate-scope/attr/isolate-scope-attr.view.html',
 			controller: 'IsolateScopeAttrCtrl as vm'
 		})
 		.state('directives.isolate-scope.equal', {
-			url: 'directives/isolate-scope/equal',
-			templateUrl: modulePath + 'isolate-scope/equal/isolate-scope-equal.view.html'
-			//template: '<div>Equal</div>'
+			url: '/equal',
+			templateUrl: modulePath + 'isolate-scope/equal/isolate-scope-equal.view.html',
+			controller: 'IsolateScopeEqualCtrl as vm'
 		})
 		.state('directives.isolate-scope.and', {
-			url: 'directives/isolate-scope/and',
+			url: '/and',
 			templateUrl: modulePath + 'isolate-scope/and/isolate-scope-and.view.html'
 			//template: '<div>And</div>'
 		});
