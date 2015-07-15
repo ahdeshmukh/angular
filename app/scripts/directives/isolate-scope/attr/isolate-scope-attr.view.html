@@ -3,13 +3,19 @@
 
 
 <div style="border:1px solid;">
-  <div>Here the fruit-name is considered as an attribute of the div, which is passed into the 'xyz' property of the isolate scope.</div>
-  <div>This 'xyz' property is then printed in the template which prints the string value of the 'xyz' property.</div>
-  <div>In the code we have var directive = {scope: {xyz: "@fruitName"}}</div>
-  <div>We get the value of fruit-name attribute from the div, assign it to the 'xyz' property in the isolate scope and then print it.</div>
   <div>
-    We can also do var directive = {scope: {fruitName: "@"}}, where instead of 'xyz' property name, we are using 'fruitName' which 
-    matches the attribute fruit-name of the div.
+    <ul>
+      <li>Used for one way binding, more likely to be used than = </li>
+			<li>Passes string as attribute from html to directive</li>
+			<li>Here the fruit-name is considered as an attribute of the div, which is passed into the 'xyz' property of the isolate scope.</li>
+			<li>This 'xyz' property is then printed in the template which prints the string value of the 'xyz' property.</li>
+			<li>In the code we have var directive = {scope: {xyz: "@fruitName"}}</li>
+			<li>We get the value of fruit-name attribute from the div, assign it to the 'xyz' property in the isolate scope and then print it.</li>
+			<li>
+			  We can also do var directive = {scope: {fruitName: "@"}}, where instead of 'xyz' property name, we are using 'fruitName' which 
+			  matches the attribute fruit-name of the div.
+			</li>
+     </ul>
   </div>
   <div>
     Core files
