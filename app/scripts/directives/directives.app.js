@@ -48,8 +48,8 @@
 		})
 		.state('directives.isolate-scope.and', {
 			url: '/and',
-			templateUrl: modulePath + 'isolate-scope/and/isolate-scope-and.view.html'
-			//template: '<div>And</div>'
+			templateUrl: modulePath + 'isolate-scope/and/isolate-scope-and.view.html',
+			controller: 'IsolateScopeAndCtrl as vm'
 		});
 	}
 	
