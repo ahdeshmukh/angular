@@ -1,1 +1,44 @@
 <div>Isolate scope equal</div>
+
+<div style="margin:10px 0;">
+  <div>Controller</div>
+  <div><input type="text" ng-model="vm.fruitName" /></div>
+</div>
+<div style="margin:10px 0;">
+  <div>Directive</div>
+  <div isolate-scope-equal fruit-name="vm.fruitName"></div>
+</div>
+
+
+<div style="border:1px solid;">
+	<div>
+		<ul>
+		  <li>Used for Two way binding, generally less likely to be used than @ </li>
+			<li>Passes object as attribute from html to directive</li>
+			<li>We are passing object instead of string, any change to the object in directive also changes it in controller and vice versa </li>
+			<li>Notice how changing the text in one textbox changes it in other.</li>
+			<li>One textbox is getting printed in html file and populated with data from controller</li>
+			<li>Second textbox is getting printed in directive and populated with data passed to the directive</li>
+			<li>Here the fruit-name is considered as an attribute of the div, which is passed into the 'xyz' property of the isolate scope.</li>
+			<li>This 'xyz' property is then printed in the template which prints the string value of the 'xyz' property.</li>
+			<li>In the code we have var directive = {scope: {xyz: "=fruitName"}}</li>
+			<li>We get the value of fruit-name attribute from the div, assign it to the 'xyz' property in the isolate scope and then print it.</li>
+			<li>
+			  We can also do var directive = {scope: {fruitName: "="}}, where instead of 'xyz' property name, we are using 'fruitName' which 
+			  matches the attribute fruit-name of the li.
+			</li>
+		</ul>
+	</div>
+
+  <div>
+    Core files
+    <ul>
+      <li>isolate-scope/equal/isolate-scope-equal.directive.js</li>
+      <li>isolate-scope/equal/isolate-scope-equal.view.html</li>
+      <li>isolate-scope/equal/isolate-scope-equal.controller.js</li>
+      <li>directives/directives.app.js</li>
+      <li>isolate-scope/isolate-scope.view.html</li>
+    </ul>
+  </div>
+  
+</div>
