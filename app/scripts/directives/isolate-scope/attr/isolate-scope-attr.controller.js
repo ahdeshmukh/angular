@@ -3,9 +3,9 @@
 	
 	angular
 		.module('angularApp.directives')
-		.controller('IsolateScopeAttrCtrl', IsolateScopeAttr);
+		.controller('IsolateScopeAttrCtrl', isolateScopeAttr);
 	
-	function IsolateScopeAttr() {
+	function isolateScopeAttr() {
 		
 		var vm = this;
 		vm.fruitName = 'Mango';
