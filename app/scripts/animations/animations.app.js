@@ -2,10 +2,10 @@
 	'use strict';
 	
 	angular
-		.module('angularApp.routeviews', ['angularApp.shows']);
+		.module('angularApp.animations', []);
 	
 	angular
-		.module('angularApp.routeviews')
+		.module('angularApp.animations')
 		.config(routeConfig);
 	
 	routeConfig.$inject = ['$stateProvider'];
@@ -13,9 +13,9 @@
 	function routeConfig($stateProvider) {
 		
 		$stateProvider
-		.state('routeviews', {
-			abstract: true,
-			template: '<div ui-view></div>'
+		.state('animations', {
+			url: '/animations',
+			template: '<h1>Animations</h1>'
 		});
 	}
 	
