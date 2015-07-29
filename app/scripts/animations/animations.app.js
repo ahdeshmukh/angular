@@ -8,15 +8,23 @@
 		.module('angularApp.animations')
 		.config(routeConfig);
 	
-	routeConfig.$inject = ['$stateProvider'];
+	routeConfig.$inject = ['$stateProvider', '$urlRouterProvider', 'APP_GLOBALS'];
 	
-	function routeConfig($stateProvider) {
+	function routeConfig($stateProvider, $urlRouterProvider, APP_GLOBALS) {
+		
+		var modulePath = APP_GLOBALS.appModulesPath + 'animations/';
 		
 		$stateProvider
 		.state('animations', {
 			url: '/animations',
-			template: '<h1>Animations</h1>'
+			templateUrl: modulePath + 'animations.html'
 		});
+		
+		$urlRouterProvider.otherwise(function($injector) {
+			var $state = $injector.get('$state');
+		    $state.go('home');
+		});
+		
 	}
 	
 })();
