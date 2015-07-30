@@ -18,7 +18,11 @@
 		.state('animations', {
 			url: '/animations',
 			templateUrl: modulePath + 'animations.html'
-		});
+		})
+		.state('animations.css3', {
+			url: '/animations/css3',
+			templateUrl: modulePath + '/css3/animations.css3.html'
+		})
 		
 		$urlRouterProvider.otherwise(function($injector) {
 			var $state = $injector.get('$state');

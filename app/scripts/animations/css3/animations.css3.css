@@ -1,0 +1,62 @@
+/* Common */
+.css3-transitions {
+	width: 100px;
+	height: 100px;
+	background: red;
+}
+
+/* End common */
+
+/* Transition width */
+#css3-transition-1 {
+	-webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+  transition: width 2s;
+}
+#css3-transition-1:hover {
+	width: 300px;
+}
+
+/* Transition width and height */
+#css3-transition-2 {
+	-webkit-transition: width 2s, height 4s; /* For Safari 3.1 to 6.0 */
+  transition: width 2s, height 4s;
+}
+#css3-transition-2:hover {
+	width: 300px;
+	height: 300px;
+}
+
+/* Transition width, height and background-color */
+#css3-transition-3 {
+	-webkit-transition: width 2s, height 4s, background 6s; /* For Safari 3.1 to 6.0 */
+  transition: width 2s, height 4s background 6s;
+}
+#css3-transition-3:hover {
+	width: 300px;
+	height: 300px;
+	background: yellow;
+}
+
+/* Transition delay */
+#css3-transition-4 {
+	-webkit-transition: width 2s, height 4s, background 6s; /* For Safari 3.1 to 6.0 */
+  transition: width 2s, height 4s, background 6s;
+  transition-delay: 1s;
+}
+#css3-transition-4:hover {
+	width: 300px;
+	height: 300px;
+	background: yellow;
+}
+
+/* Transition + Transformation */
+#css3-transition-5 {
+	-webkit-transition: width 2s, height 4s, background 6s, transform 2s; /* For Safari 3.1 to 6.0 */
+  transition: width 2s, height 4s, background 6s, transform 2s;
+}
+#css3-transition-5:hover {
+	width: 300px;
+	height: 300px;
+	background: yellow;
+	transform: rotate(180deg);
+}
