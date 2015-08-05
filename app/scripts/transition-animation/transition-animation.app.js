@@ -27,6 +27,10 @@
 			url: '/animation',
 			templateUrl: modulePath + '/css3/animation.html'
 		})
+		.state('angular-animate', {
+			url: '/angular-animate',
+			templateUrl: modulePath + '/angular-animate/angular-animate.html'
+		});
 		
 		$urlRouterProvider.otherwise(function($injector) {
 			var $state = $injector.get('$state');
