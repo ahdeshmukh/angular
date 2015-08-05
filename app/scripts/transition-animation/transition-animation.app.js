@@ -23,6 +23,10 @@
 			url: '/transition',
 			templateUrl: modulePath + '/css3/transition.html'
 		})
+		.state('css3-transition-animation.animation', {
+			url: '/animation',
+			templateUrl: modulePath + '/css3/animation.html'
+		})
 		
 		$urlRouterProvider.otherwise(function($injector) {
 			var $state = $injector.get('$state');
