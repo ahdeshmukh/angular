@@ -1,20 +1,78 @@
 /* Common */
 .css3-animations {
-	width: 100px;
-	height: 100px;
+	width: 50px;
+	height: 50px;
 	background: red;
 }
 
 /* End common */
 
-/* The animation code */
+/* Animation width */
 @keyframes css3-animation-1 {
-	from {width: 100px;} /* removing from will also work */
-	to {width: 300px;}
+	/* 
+		removing from will also work unless you want the value of property to be different from original value, 
+		like having width: 150px; instead of 100px;  
+	*/
+	from {width: 50px;}
+	to {width: 100px;}
 }
-
-/* The element to apply the animation to */
 #css3-animation-1 {
 	animation-name: css3-animation-1;
 	animation-duration: 4s;
 }
+/* End Animation width */
+
+/* Animation width + height */
+@keyframes css3-animation-2 {
+	from {width: 50px; height: 50px;} 
+	to {width: 100px; height: 100px;}
+}
+#css3-animation-2 {
+	animation-name: css3-animation-2;
+	animation-duration: 4s;
+}
+/* End Animation width + height */
+
+/* Animation keyframe percentage example */
+@keyframes css3-animation-3 {
+	0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+#css3-animation-3 {
+	animation-name: css3-animation-3;
+	animation-duration: 3s;
+}
+/* End Animation keyframe percentage example */
+
+/* Animation keyframe percentage example with position change */
+@keyframes css3-animation-4 {
+	0%   {background-color: red; left:0px; top:0px;}
+  25%  {background-color: yellow; left:30px; top:0px;}
+  50%  {background-color: blue; left:30px; top:30px;}
+  75%  {background-color: green; left:0px; top:30px;}
+  100% {background-color: red; left:0px; top:0px;}
+}
+#css3-animation-4 {
+	animation-name: css3-animation-4;
+	animation-duration: 3s;
+	position: relative;
+}
+/* End Animation keyframe percentage example */
+
+/* Animation keyframe iteration count */
+@keyframes css3-animation-5 {
+	0%   {background-color: red; left:0px; top:0px;}
+  25%  {background-color: yellow; left:30px; top:0px;}
+  50%  {background-color: blue; left:30px; top:30px;}
+  75%  {background-color: green; left:0px; top:30px;}
+  100% {background-color: red; left:0px; top:0px;}
+}
+#css3-animation-5 {
+	animation-name: css3-animation-5;
+	animation-duration: 3s;
+	position: relative;
+	animation-iteration-count: 3; /* change 3 to infite to keep the animation going forever */
+}
+/* End Animation keyframe percentage example */
