@@ -1,7 +1,7 @@
 /* Common */
 .css3-transitions {
-	width: 100px;
-	height: 100px;
+	width: 50px;
+	height: 50px;
 	background: red;
 }
 
@@ -13,8 +13,9 @@
   transition: width 2s;
 }
 #css3-transition-1:hover {
-	width: 300px;
+	width: 100px;
 }
+/* End Transition width */
 
 /* Transition width and height */
 #css3-transition-2 {
@@ -22,9 +23,10 @@
   transition: width 2s, height 4s;
 }
 #css3-transition-2:hover {
-	width: 300px;
-	height: 300px;
+	width: 100px;
+	height: 100px;
 }
+/* End Transition width and height */
 
 /* Transition width, height and background-color */
 #css3-transition-3 {
@@ -32,10 +34,11 @@
   transition: width 2s, height 4s, background 6s;
 }
 #css3-transition-3:hover {
-	width: 300px;
-	height: 300px;
+	width: 100px;
+	height: 100px;
 	background: yellow;
 }
+/* End Transition width, height and background-color */
 
 /* Transition delay */
 #css3-transition-4 {
@@ -44,10 +47,11 @@
   transition-delay: 1s;
 }
 #css3-transition-4:hover {
-	width: 300px;
-	height: 300px;
+	width: 100px;
+	height: 100px;
 	background: yellow;
 }
+/* End Transition delay */
 
 /* Transition + Transformation */
 #css3-transition-5 {
@@ -55,8 +59,9 @@
   transition: width 2s, height 4s, background 6s, transform 2s;
 }
 #css3-transition-5:hover {
-	width: 300px;
-	height: 300px;
+	width: 100px;
+	height: 100px;
 	background: yellow;
 	transform: rotate(180deg);
 }
+/* End Transition + Transformation */
