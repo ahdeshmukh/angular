@@ -19,6 +19,6 @@
 			'angularApp.directives',
 			'angularApp.routeviews',
 			'angularApp.about',
-			'angularApp.animations'
+			'angularApp.transitionAnimations'
 		]);
 })();
