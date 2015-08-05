@@ -1,0 +1,23 @@
+.angular-animate-ngif-toggle {
+	height: 100px;
+	width: 100px;
+	background-color: green;
+	margin: 20px 0;
+	transition: linear 10s;
+}
+
+.angular-animate-ngif-toggle.ng-enter {
+	opacity: 0;
+}
+
+.angular-animate-ngif-toggle.ng-enter-active {
+	opacity: 1;
+}
+
+.angular-animate-ngif-toggle.ng-leave {
+	opacity: 1;
+}
+
+.angular-animate-ngif-toggle.ng-leave-active {
+	opacity: 0;
+}

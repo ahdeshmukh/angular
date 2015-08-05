@@ -1,0 +1,24 @@
+<h3>Toggle ngif</h3>
+<button class="btn btn-primary" ng-click="vm.toggle=!vm.toggle">Toggle Animation</button>
+<div class="angular-animate-ngif-toggle" ng-if="vm.toggle"></div>
+
+<div style="margin-top:20px">
+	Files used
+	<ul>
+		<li>transition-animation/angular-animate/ngif/ngif.css</li>
+		<li>transition-animation/angular-animate/ngif/ngif.controller.js</li>
+		<li>transition-animation/angular-animate/ngif/ngif.html</li>
+	</ul>
+</div>
+
+<div style="margin-top:20px; border: 1px solid;">
+https://egghead.io/lessons/angularjs-animation-basics
+	<div>Explanation</div>
+	<ul>
+		<li>class angular-animate-ngif-toggle has basic style and a linear transition property of 2s</li>
+		<li>class angular-animate-ngif-toggle.ng-enter has opacity 0, which means as you begin to start the transition, start at opacity 0 </li>
+		<li>class angular-animate-ngif-toggle.ng-enter-active has opacity 1, which means as you finish the transition, make the final opacity = 1 </li>
+		<li>class angular-animate-ngif-toggle.ng-leave has opacity 1, which means as you begin to leave the transition, start at opacity 1 </li>
+		<li>class angular-animate-ngif-toggle.ng-leave-active has opacity 0, which means as you finish the transition, make the final opacity = 0 </li>
+	</ul>
+</div>
