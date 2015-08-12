@@ -2,3 +2,17 @@
 <button class="btn btn-danger angular-animate-ngrepeat" ng-click="vm.clearItems()">Clear</button>
 <hr/>
 <button class="btn btn-warning angular-animate-ngrepeat" ng-repeat="item in vm.items" ng-click="vm.removeItem($index)" ng-bind="item.title" style="margin:5px;"></button>
+
+<div style="margin-top:20px">
+	Files used
+	<ul>
+		<li>transition-animation/angular-animate/ng-repeat/ng-repeat.css</li>
+		<li>transition-animation/angular-animate/ng-repeat/ng-repeat.controller.js</li>
+		<li>transition-animation/angular-animate/ng-repeat/ng-repeat.html</li>
+	</ul>
+</div>
+
+<div style="margin-top:20px; border: 1px solid;">
+	<div>Explanation</div>
+	<div>Similar to the one for NgIf animation. The only thing added is stagger, which provides a nice staggering effect for elements printed by ng-repeat directive.</div>
+</div>
