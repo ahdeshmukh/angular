@@ -40,6 +40,10 @@
 			url: '/ng-repeat',
 			templateUrl: modulePath + '/angular-animate/ng-repeat/ng-repeat.html',
 			controller: 'AngularAnimateNgRepeat as vm'
+		})
+		.state('angular-animate.ng-class', {
+			url: '/ng-repeat',
+			templateUrl: modulePath + '/angular-animate/ng-class/ng-class.html'
 		});
 		
 		$urlRouterProvider.otherwise(function($injector) {
