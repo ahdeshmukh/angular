@@ -3,7 +3,7 @@
 	width: 100px;
 	background-color: green;
 	margin: 20px 0;
-	transition: linear 10s;
+	transition: linear 2s;
 }
 
 .angular-animate-ngif-toggle.ng-enter {
