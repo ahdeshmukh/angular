@@ -33,7 +33,7 @@
 		})
 		.state('angular-animate.ngif-toggle', {
 			url: '/ngif-toggle',
-			templateUrl: modulePath + '/angular-animate/ng-if/ngif.html',
+			templateUrl: modulePath + '/angular-animate/ng-if/ng-if.html',
 			controller: 'AngularAnimateNgIfToggle as vm'
 		})
 		.state('angular-animate.ng-repeat', {
