@@ -35,6 +35,11 @@
 			url: '/ngif-toggle',
 			templateUrl: modulePath + '/angular-animate/ng-if/ngif.html',
 			controller: 'AngularAnimateNgIfToggle as vm'
+		})
+		.state('angular-animate.ng-repeat', {
+			url: '/ng-repeat',
+			templateUrl: modulePath + '/angular-animate/ng-repeat/ng-repeat.html',
+			controller: 'AngularAnimateNgRepeat as vm'
 		});
 		
 		$urlRouterProvider.otherwise(function($injector) {

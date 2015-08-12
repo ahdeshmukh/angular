@@ -1,0 +1,4 @@
+<button class="btn btn-primary angular-animate-ngrepeat" ng-click="vm.addItems()">Add</button>
+<button class="btn btn-danger angular-animate-ngrepeat" ng-click="vm.clearItems()">Clear</button>
+<hr/>
+<button class="btn btn-warning angular-animate-ngrepeat" ng-repeat="item in vm.items" ng-click="vm.removeItem($index)" ng-bind="item.title" style="margin:5px;"></button>

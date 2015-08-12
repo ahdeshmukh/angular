@@ -1,0 +1,29 @@
+.angular-animate-ngrepeat {
+	transition: 1s;
+}
+
+.angular-animate-ngrepeat.ng-enter {
+	opacity: 0;
+}
+
+.angular-animate-ngrepeat.ng-enter-stagger {
+	transition-delay: 0.1s;
+	transition-duration: 0s; /* in case the stagger doesn't work then this values must be set to 0 to avoid an accidental CSS inheritance */
+}
+
+.angular-animate-ngrepeat.ng-enter-active {
+	opacity: 1;
+}
+
+.angular-animate-ngrepeat.ng-leave {
+	opacity: 1;
+}
+
+.angular-animate-ngrepeat.ng-leave-stagger {
+	transition-delay: 0.1s;
+	transition-duration: 0s; /* in case the stagger doesn't work then this values must be set to 0 to avoid an accidental CSS inheritance */
+}
+
+.angular-animate-ngrepeat.ng-leave-active {
+	opacity: 0;
+}
