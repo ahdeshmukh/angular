@@ -8,7 +8,7 @@
 	function angularAnimateNgIfToggle() {
 		
 		var vm = this;
-		this.toggle = 'hello';
+		this.toggle = true;
 		
 	}
 	
