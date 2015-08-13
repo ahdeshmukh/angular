@@ -42,7 +42,7 @@
 			controller: 'AngularAnimateNgRepeat as vm'
 		})
 		.state('angular-animate.ng-class', {
-			url: '/ng-repeat',
+			url: '/ng-class',
 			templateUrl: modulePath + '/angular-animate/ng-class/ng-class.html'
 		});
 		
