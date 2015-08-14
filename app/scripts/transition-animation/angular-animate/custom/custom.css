@@ -1,17 +1,9 @@
-.angular-animate-custom {
-	transition: linear 1s;
+.show-fruit-image {
+	transition: linear 3s;
 }
-
-.angular-animate-custom.ng-enter {
+.show-fruit-image-add {
 	opacity: 0;
 }
-.angular-animate-custom.ng-enter-active {
+.show-fruit-image-add-active {
 	opacity: 1;
-}
-
-.angular-animate-custom.ng-leave {
-	opacity: 1;
-}
-.angular-animate-custom.ng-leave-active {
-	opacity: 0;
 }
