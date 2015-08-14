@@ -44,6 +44,10 @@
 		.state('angular-animate.ng-class', {
 			url: '/ng-class',
 			templateUrl: modulePath + '/angular-animate/ng-class/ng-class.html'
+		})
+		.state('angular-animate.custom', {
+			url: '/custom',
+			templateUrl: modulePath + '/angular-animate/custom/custom.html'
 		});
 		
 		$urlRouterProvider.otherwise(function($injector) {
