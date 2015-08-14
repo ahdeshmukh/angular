@@ -1,9 +1,9 @@
-.show-fruit-image {
+.show-fruit-image-animation {
 	transition: linear 3s;
 }
-.show-fruit-image-add {
+.show-fruit-image-animation-add {
 	opacity: 0;
 }
-.show-fruit-image-add-active {
+.show-fruit-image-animation-add-active {
 	opacity: 1;
 }

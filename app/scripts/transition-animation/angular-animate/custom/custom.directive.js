@@ -34,7 +34,7 @@
 					element.find('.custom-animate-fruit').append(toAppend);
 					
 					var fruitImage = element.find('.custom-animate-fruit-image');
-					$animate.addClass(fruitImage, "show-fruit-image");
+					$animate.addClass(fruitImage, "show-fruit-image-animation");
 				}
 			};
 		}
