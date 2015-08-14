@@ -1,0 +1,17 @@
+.angular-animate-custom {
+	transition: linear 1s;
+}
+
+.angular-animate-custom.ng-enter {
+	opacity: 0;
+}
+.angular-animate-custom.ng-enter-active {
+	opacity: 1;
+}
+
+.angular-animate-custom.ng-leave {
+	opacity: 1;
+}
+.angular-animate-custom.ng-leave-active {
+	opacity: 0;
+}
