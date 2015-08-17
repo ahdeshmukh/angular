@@ -15,7 +15,7 @@
 				fruit:"@",
 				showFruit:"&"
 			},
-			template: '<button class="btn btn-default" ng-click="showFruit({fruit: fruit});">{{fruit}}</button>' + 
+			template: '<button class="btn btn-primary" ng-click="showFruit({fruit: fruit});">{{fruit}}</button>' + 
 								'<div class="custom-animate-fruit"></div>',
 			link: link
 		};
