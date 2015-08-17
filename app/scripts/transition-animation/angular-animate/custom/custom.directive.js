@@ -24,13 +24,11 @@
 		
 		
 		function link(scope, element, attrs) {
-			scope.isDisabled = false;
 			scope.showFruit = function(fruit) {
 				var toAppend = null;
 				if(fruit.fruit) {
 					var img = 'scripts/transition-animation/angular-animate/custom/images/' + fruit.fruit + '.jpg';
 					toAppend = '<img class="custom-animate-fruit-image" src="' + img + '" />';
-					scope.isDisabled = true;
 					element.find('.custom-animate-fruit').append(toAppend);
 					
 					var fruitImage = element.find('.custom-animate-fruit-image');
