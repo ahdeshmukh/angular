@@ -32,7 +32,10 @@
 					element.find('.custom-animate-fruit').append(toAppend);
 					
 					var fruitImage = element.find('.custom-animate-fruit-image');
-					$animate.addClass(fruitImage, "show-fruit-image-animation");
+					angular.forEach(fruitImage, function(value) {
+						$animate.addClass(value, "show-fruit-image-animation");
+					});
+					
 				}
 			};
 		}
