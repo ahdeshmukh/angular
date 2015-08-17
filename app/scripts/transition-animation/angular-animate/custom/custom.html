@@ -10,4 +10,20 @@
 			<div custom-animate fruit="avocado" show-fruit="vm.showFruit(fruit)"></div>
 		</div>
 	</div>
+	<div>
+		Files used
+		<ul>
+			<li>transition-animation/angular-animate/custom/custom.css</li>
+			<li>transition-animation/angular-animate/custom/custom.directive.js</li>
+			<li>transition-animation/angular-animate/custom/custom.html</li>
+		</ul>
+	</div>
+	<div style="margin-top:20px; border: 1px solid;">
+	<div>Explanation</div>
+	<ul>
+		<li>In the link function of the directive, find the element by class name.</li>
+		<li>Add a new class (eg: new-class-name) to that element using $animate.addClass</li>
+		<li>Angularjs adds new states to new-class-name, eg: new-class-name-<b>add</b>, new-class-name-<b>add-active</b> etc which can be used for animation</li>
+	</ul>
+	</div>
 </div>
