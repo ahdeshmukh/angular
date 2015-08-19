@@ -19,6 +19,7 @@
 			'angularApp.directives',
 			'angularApp.routeviews',
 			'angularApp.about',
-			'angularApp.transitionAnimations'
+			'angularApp.transitionAnimations',
+			'angularApp.controllerCommunication'
 		]);
 })();
