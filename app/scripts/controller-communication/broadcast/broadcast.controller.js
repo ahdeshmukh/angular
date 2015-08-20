@@ -8,7 +8,8 @@
 		.controller('BroadcastChild2Ctrl', broadcastChild2Ctrl)
 		.controller('BroadcastSenderCtrl', broadcastSenderCtrl)
 		.controller('BroadcastReceiver1Ctrl', broadcastReceiver1Ctrl)
-		.controller('BroadcastReceiver2Ctrl', broadcastReceiver2Ctrl);
+		.controller('BroadcastReceiver2Ctrl', broadcastReceiver2Ctrl)
+		.controller('BroadcastReceiver1Child1Ctrl', broadcastReceiver1Child1Ctrl);
 	
 	broadcastParentCtrl.$inject = ['$scope'];
 	function broadcastParentCtrl($scope) {
@@ -44,6 +45,14 @@
 	
 	broadcastReceiver1Ctrl.$inject = ['$scope'];
 	function broadcastReceiver1Ctrl($scope) {
+		var vm = this;
+		$scope.$on('broadcast-no-parent-child-tutorial', function(event, args) {
+			vm.message = args.message;
+		});
+	}
+	
+	broadcastReceiver1Child1Ctrl.$inject = ['$scope'];
+	function broadcastReceiver1Child1Ctrl($scope) {
 		var vm = this;
 		$scope.$on('broadcast-no-parent-child-tutorial', function(event, args) {
 			vm.message = args.message;

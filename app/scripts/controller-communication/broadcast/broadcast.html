@@ -11,6 +11,22 @@
 		<h3>Child Controller - 2</h3>
 		<p>Broadcast Message : {{vm.message}}</p>
 	</div>
+	<div>
+		<div>Files used</div>
+		<ul>
+			<li>broadcast/broadcast.controller.js</li>
+			<li>broadcast/broadcast.html</li>
+		</ul>
+	</div>
+	<div style="margin-top:20px; border: 1px solid;">
+		<div>Explanation</div>
+		<ul>
+			<li>Used to broadcast event from parent controller to all it's children.</li>
+			<li>Propagation is initiated by the parent.</li>
+			<li>Parent child relationship is not necessary, but in this example we are using it for understanding</li>
+			<li>Ref: http://www.dotnet-tricks.com/Tutorial/angularjs/HM0L291214-Understanding-$emit,-$broadcast-and-$on-in-AngularJS.html/li>
+		</ul>
+	</div>
 </div>
 
 
@@ -24,9 +40,32 @@
 	<div ng-controller="BroadcastReceiver1Ctrl as vm" style="border:2px solid #428bca;padding:5px;margin:5px 0;">
 		<h3>Broadcast Receiver - 1</h3>
 		<p>Broadcast Message : {{vm.message}}</p>
+		
+		<div ng-controller="BroadcastReceiver1Child1Ctrl as vm" style="border:2px solid green;padding:5px;margin:5px 0;">
+			<h3>Broadcast Receiver 1 Child 1</h3>
+			<p>Broadcast Message : {{vm.message}}</p>
+		</div>
+		
 	</div>
 	<div ng-controller="BroadcastReceiver2Ctrl as vm" style="border:2px solid #428bca;padding:5px;margin:5px 0;">
 		<h3>Broadcast Receiver - 2</h3>
 		<p>Broadcast Message : {{vm.message}}</p>
+	</div>
+	<div>
+		<div>Files used</div>
+		<ul>
+			<li>broadcast/broadcast.controller.js</li>
+			<li>broadcast/broadcast.factory.js</li>
+			<li>broadcast/broadcast.html</li>
+		</ul>
+	</div>
+	<div style="margin-top:20px; border: 1px solid;">
+		<div>Explanation</div>
+		<ul>
+			<li>Used to broadcast event from parent controller to all it's children and their children.</li>
+			<li>Propagation is initiated by the parent.</li>
+			<li>In this example, we do not have a parent child relationship. All controllers are independent of each other.
+			We are using a $rootScope in lieu of a parent controller's $scope, since $rootScope is parent of all the $scope's</li>
+		</ul>
 	</div>
 </div>
