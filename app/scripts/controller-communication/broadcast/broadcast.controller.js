@@ -34,11 +34,11 @@
 		});
 	}
 	
-	broadcastSenderCtrl.$inject = ['$rootScope'];
-	function broadcastSenderCtrl($rootScope) {
+	broadcastSenderCtrl.$inject = ['broadcastFactory'];
+	function broadcastSenderCtrl(broadcastFactory) {
 		var vm = this;
 		vm.handleClick = function(msg) {
-			$rootScope.$broadcast('broadcast-no-parent-child-tutorial', {message: msg});
+			broadcastFactory.prepForBroadcast(msg);
 		}
 	}
 	
