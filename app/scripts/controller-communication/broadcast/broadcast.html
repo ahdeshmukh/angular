@@ -1,0 +1,32 @@
+<h1>BroadCast - Parent Child</h1>
+<div ng-controller="BroadcastParentCtrl as vm" style="border:2px solid #E75D5C; padding:5px;">
+	<h2>Parent Controller</h2>
+	<input ng-model="vm.message">
+	<button ng-click="vm.handleClick(vm.message);">Broadcast</button>
+	<div ng-controller="BroadcastChild1Ctrl as vm" style="border:2px solid #428bca;padding:5px;margin:5px 0;">
+		<h3>Child Controller - 1</h3>
+		<p>Broadcast Message : {{vm.message}}</p>
+	</div>
+	<div ng-controller="BroadcastChild2Ctrl as vm" style="border:2px solid #428bca;padding:5px;margin:5px 0;">
+		<h3>Child Controller - 2</h3>
+		<p>Broadcast Message : {{vm.message}}</p>
+	</div>
+</div>
+
+
+<h1>BroadCast - No Parent Child</h1>
+<div style="border:2px solid #E75D5C; padding:5px;">
+	<div ng-controller="BroadcastSenderCtrl as vm" style="border:2px solid #428bca;padding:5px;margin:5px 0;">
+		<h3>BroadCast Sender</h3>
+		<input ng-model="vm.message">
+		<button ng-click="vm.handleClick(vm.message);">Broadcast</button>
+	</div>
+	<div ng-controller="BroadcastReceiver1Ctrl as vm" style="border:2px solid #428bca;padding:5px;margin:5px 0;">
+		<h3>Broadcast Receiver - 1</h3>
+		<p>Broadcast Message : {{vm.message}}</p>
+	</div>
+	<div ng-controller="BroadcastReceiver2Ctrl as vm" style="border:2px solid #428bca;padding:5px;margin:5px 0;">
+		<h3>Broadcast Receiver - 2</h3>
+		<p>Broadcast Message : {{vm.message}}</p>
+	</div>
+</div>

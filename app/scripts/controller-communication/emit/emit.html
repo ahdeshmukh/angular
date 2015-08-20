@@ -1,0 +1,15 @@
+<h1>Emit</h1>
+<div ng-controller="EmitParentCtrl as vm" style="border:2px solid #E75D5C; padding:5px;">
+	<h2>Parent Controller</h2>
+	<p>Emit Message : {{vm.message}}</p>
+	<div ng-controller="EmitChild1Ctrl as vm" style="border:2px solid #428bca;padding:5px;margin:5px 0;">
+		<h3>Child Controller - 1</h3>
+		<input ng-model="vm.msg">
+		<button ng-click="vm.handleClick(vm.msg);">Emit</button>
+	</div>
+	<div ng-controller="EmitChild2Ctrl as vm" style="border:2px solid #428bca;padding:5px;margin:5px 0;">
+		<h3>Child Controller - 2</h3>
+		<input ng-model="vm.msg">
+		<button ng-click="vm.handleClick(vm.msg);">Emit</button>
+	</div>
+</div>

@@ -22,6 +22,14 @@
 		.state('controller-communication.between-controllers', {
 			url: '/controller-communication/between-controllers',
 			templateUrl: modulePath + '/between-controllers/between-controllers.html'
+		})
+		.state('controller-communication.emit', {
+			url: '/controller-communication/emit',
+			templateUrl: modulePath + '/emit/emit.html'
+		})
+		.state('controller-communication.broadcast', {
+			url: '/controller-communication/broadcast',
+			templateUrl: modulePath + '/broadcast/broadcast.html'
 		});
 		
 		$urlRouterProvider.otherwise(function($injector) {
