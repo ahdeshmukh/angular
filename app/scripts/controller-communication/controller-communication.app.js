@@ -26,6 +26,10 @@
 		.state('controller-communication.broadcast', {
 			url: '/controller-communication/broadcast',
 			templateUrl: modulePath + '/broadcast/broadcast.html'
+		})
+		.state('controller-communication.emit-broadcast', {
+			url: '/controller-communication/emit-broadcast',
+			templateUrl: modulePath + '/emit-broadcast/emit-broadcast.html'
 		});
 		
 		$urlRouterProvider.otherwise(function($injector) {
