@@ -1,12 +1,16 @@
 <div>Isolate scope equal</div>
 
 <div style="margin:10px 0;">
-  <div>Controller</div>
-  <div><input type="text" ng-model="vm.fruitName" /></div>
-</div>
-<div style="margin:10px 0;">
-  <div>Directive</div>
-  <div isolate-scope-equal fruit-name="vm.fruitName"></div>
+  <div ng-controller="IsolateScopeEqualCtrl as vm">
+  	<div>Controller</div>
+  	<input type="text" ng-model="vm.fruitName" />
+  	
+  	<div style="margin:10px 0;">
+  		<div>Directive</div>
+  		<div isolate-scope-equal fruit-name="vm.fruitName"></div>
+		</div>
+  	
+  </div>
 </div>
 
 

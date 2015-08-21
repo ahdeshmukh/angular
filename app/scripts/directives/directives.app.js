@@ -44,7 +44,7 @@
 		.state('directives.isolate-scope.equal', {
 			url: '/equal',
 			templateUrl: modulePath + 'isolate-scope/equal/isolate-scope-equal.view.html',
-			controller: 'IsolateScopeEqualCtrl as vm'
+			//controller: 'IsolateScopeEqualCtrl as vm'
 		})
 		.state('directives.isolate-scope.and', {
 			url: '/and',
