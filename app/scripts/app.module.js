@@ -20,6 +20,7 @@
 			'angularApp.routeviews',
 			'angularApp.about',
 			'angularApp.transitionAnimations',
-			'angularApp.controllerCommunication'
+			'angularApp.controllerCommunication',
+			'angularApp.angularFormly'
 		]);
 })();

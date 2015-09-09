@@ -1,0 +1,16 @@
+<h1>Angular Formly</h1>
+<div>Run "bower install angular-formly angular-formly-templates-bootstrap api-check --save" and then "bower install"</div>
+<div>
+	Ref:
+	<a href="https://scotch.io/tutorials/easy-angularjs-forms-with-angular-formly" target="_blank">
+		https://scotch.io/tutorials/easy-angularjs-forms-with-angular-formly
+	</a>
+</div>
+<div class="angular-formly-container">
+	<form novalidate>
+		<h3>Rent-a-Car, eh?</h3>
+	  <formly-form model="vm.rental" fields="vm.rentalFields" form="vm.rentalForm">
+	  	<button type="submit" class="btn btn-primary" ng-disabled="vm.rentalForm.$invalid">Submit</button>
+		</formly-form>
+	</form>
+</div>
