@@ -18,7 +18,14 @@
 		.state('angular-datatables', {
 			url: '/angular-datatables',
 			templateUrl: modulePath + 'angular-datatables.html',
-			//controller: 'AngularFormlyCtrl as vm'
+		})
+		.state('angular-datatables.zero-config', {
+			url: '/angular-datatables/zero-config',
+			templateUrl: modulePath + 'zero-config/zero-config.html',
+		})
+		.state('angular-datatables.with-options', {
+			url: '/angular-datatables/with-options',
+			templateUrl: modulePath + 'with-options/with-options.html',
 		});
 		
 		$urlRouterProvider.otherwise(function($injector) {
