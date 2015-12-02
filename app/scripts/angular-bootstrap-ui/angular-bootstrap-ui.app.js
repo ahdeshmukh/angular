@@ -2,7 +2,7 @@
 	'use strict';
 	
 	angular
-		.module('angularApp.angularBootstrapUi',	[]);
+		.module('angularApp.angularBootstrapUi',	['ui.bootstrap']);
 	
 	angular
 		.module('angularApp.angularBootstrapUi')
@@ -18,6 +18,10 @@
 		.state('angular-bootstrap-ui', {
 			url: '/angular-bootstrap-ui',
 			templateUrl: modulePath + 'angular-bootstrap-ui.html',
+		})
+		.state('angular-bootstrap-ui.accordion', {
+			url: '/angular-bootstrap-ui/accordion',
+			templateUrl: modulePath + 'accordion/accordion.html',
 		});
 		
 		$urlRouterProvider.otherwise(function($injector) {
