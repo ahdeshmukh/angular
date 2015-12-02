@@ -22,6 +22,10 @@
 		.state('angular-bootstrap-ui.accordion', {
 			url: '/angular-bootstrap-ui/accordion',
 			templateUrl: modulePath + 'accordion/accordion.html',
+		})
+		.state('angular-bootstrap-ui.alert', {
+			url: '/angular-bootstrap-ui/alert',
+			templateUrl: modulePath + 'alert/alert.html',
 		});
 		
 		$urlRouterProvider.otherwise(function($injector) {
