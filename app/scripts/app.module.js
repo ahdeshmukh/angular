@@ -22,6 +22,7 @@
 			'angularApp.transitionAnimations',
 			'angularApp.controllerCommunication',
 			'angularApp.angularFormly',
-			'angularApp.angularDatatables'
+			'angularApp.angularDatatables',
+			'angularApp.angularBootstrapUi'
 		]);
 })();
