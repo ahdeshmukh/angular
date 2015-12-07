@@ -26,6 +26,10 @@
 		.state('angular-bootstrap-ui.alert', {
 			url: '/angular-bootstrap-ui/alert',
 			templateUrl: modulePath + 'alert/alert.html',
+		})
+		.state('angular-bootstrap-ui.collapse', {
+			url: '/angular-bootstrap-ui/collapse',
+			templateUrl: modulePath + 'collapse/collapse.html',
 		});
 		
 		$urlRouterProvider.otherwise(function($injector) {
