@@ -1,7 +1,7 @@
 (function() {
 	angular
 	.module('angularApp.angularBootstrapUi')
-	.controller('AccordionDemo', accordionDemo);
+	.controller('AccordionDemoCtrl', accordionDemo);
 
 	accordionDemo.$inject = ['APP_GLOBALS'];
 	function accordionDemo(APP_GLOBALS) {
