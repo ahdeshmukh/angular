@@ -20,7 +20,8 @@
 		  		type: 'text',
 		  		label: 'First Name',
 		  		placeholder: 'Enter your first name',
-		  		required: true
+		  		required: true,
+				pattern: "^[a-zA-Z]+$"
 		  	}
 		  },
 		  {
