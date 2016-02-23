@@ -48,6 +48,10 @@
 		.state('angular-animate.custom', {
 			url: '/custom',
 			templateUrl: modulePath + '/angular-animate/custom/custom.html'
+		})
+		.state('angular-animate.filter', {
+			url: '/filter',
+			templateUrl: modulePath + '/angular-animate/filter/filter.html'
 		});
 		
 		$urlRouterProvider.otherwise(function($injector) {

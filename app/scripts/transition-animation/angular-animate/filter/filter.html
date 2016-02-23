@@ -1,0 +1,9 @@
+<div class="angular-animate-filter-container" data-ng-controller="AngularAnimateFilter as vm">
+	<input type="text" data-ng-model="search">
+	<button type="submit" >Filter</button>
+	<ul>
+		<li class="angular-animate-filter-li" data-ng-repeat="song in vm.songs | filter:search">
+			{{song}}
+		</li> 
+	</ul>
+</div>
