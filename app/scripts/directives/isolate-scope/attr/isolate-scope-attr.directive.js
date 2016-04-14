@@ -12,7 +12,10 @@
 				scope: {
 					xyz:"@fruitName"
 				},
-				template: '<div><b>{{xyz}}</b></div>',
+				controller: ['$scope', function($scope) {
+					$scope.a = 'A';
+				}],
+				template: '<div><b>hello {{a}} {{xyz}}</b></div>',
 				//link: link
 		};
 		
