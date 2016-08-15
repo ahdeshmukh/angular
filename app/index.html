@@ -6,12 +6,11 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- build:css(.) styles/vendor.css -->
-	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-    <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/datatables/media/css/jquery.dataTables.css" />
-    <link rel="stylesheet" href="bower_components/angular-datatables/dist/plugins/bootstrap/datatables.bootstrap.css" />
-    <!-- endbower -->
+    <!-- build:css(app) styles/vendor.css -->
+	<!-- bower:css -->
+	<link rel="stylesheet" href="bower_components/datatables/media/css/jquery.dataTables.css" />
+	<link rel="stylesheet" href="bower_components/angular-datatables/dist/plugins/bootstrap/datatables.bootstrap.css" />
+	<!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
@@ -80,7 +79,7 @@
        ga('send', 'pageview');
     </script>
 
-    <!-- build:js(.) scripts/vendor.js -->
+    <!-- build:js(app) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
@@ -110,8 +109,9 @@
     <script src="bower_components/angular-datatables/dist/plugins/select/angular-datatables.select.js"></script>
     <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
     <!-- endbower -->
+	<!-- endbuild -->
     
-
+	<!-- build:js(app) scripts/scripts.js -->
     <!-- app files -->
 		<script src="scripts/app.module.js"></script>
 		<script src="scripts/app.constant.js"></script>
@@ -164,6 +164,7 @@
 		<script src="scripts/transition-animation/angular-animate/custom/custom.directive.js"></script>
     <!-- end directives -->
 	<!-- endbuild -->
+	
     
 </body>
 </html>
